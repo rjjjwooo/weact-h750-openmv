@@ -6,7 +6,7 @@ ENV DAPPER_OUTPUT ./docker/build
 ENV DAPPER_DOCKER_SOCKET true
 ENV DAPPER_TARGET dapper
 RUN apt update && apt install -y build-essential wget git python3 python-is-python3
-ENV GCC_URL="https://armkeil.blob.core.windows.net/developer/Files/downloads/gnu-rm/10-2020q4/gcc-arm-none-eabi-10-2020-q4-major-x86_64-linux.tar.bz2" 
+ENV GCC_URL="https://armkeil.blob.core.windows.net/developer/Files/downloads/gnu-rm/9-2020-q2-update/gcc-arm-none-eabi-9-2020-q2-update-x86_64-linux.tar.bz2" 
 RUN mkdir ./gcc
 RUN wget --no-check-certificate -O - ${GCC_URL} | tar --strip-components=1 -jx -C ./gcc
 RUN mkdir ./cmake && \
