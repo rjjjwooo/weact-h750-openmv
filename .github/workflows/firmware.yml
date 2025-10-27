@@ -72,7 +72,7 @@ jobs:
         submodules: false
 
     - name: '🤌 Download artifacts'
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v6
       with:
         name: firmware
         path: firmware
@@ -117,7 +117,7 @@ jobs:
         submodules: false
 
     - name: '🤌 Download artifacts'
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v6
       with:
         name: firmware
         path: firmware
